@@ -1,4 +1,4 @@
-.acordeon {
+.accordion {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,13 +8,13 @@
   transition: 0.25s;
 }
 
-.acordeon.open,
-.acordeon:hover {
+.accordion.open,
+.accordion:hover {
   background-color: #55569e;
   border-color: #55569e;
 }
 
-.acordeon .trigger {
+.accordion .trigger {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,11 +27,11 @@
   border: none;
 }
 
-.acordeon .trigger:hover {
+.accordion .trigger:hover {
   cursor: pointer;
 }
 
-.acordeon .trigger::after {
+.accordion .trigger::after {
   content: "";
   display: inline-block;
   width: 1.5rem;
@@ -39,16 +39,29 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("../icons/arrow.svg");
+  transition: 0.25s;
 }
 
-.acordeon .content {
-  display: none;
+.accordion .content {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: 0.25s ease-in-out;
 }
 
-.acordeon.open .trigger::after {
+.accordion.open .trigger::after {
   transform: rotate(180deg);
 }
 
-.acordeon.open .content {
-  display: inline;
+.accordion.open .content.language {
+  height: 160px;
+  opacity: 1;
+  padding: 0 1rem 1rem 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion.open .content.language {
+    height: 60px;
+  }
 }
