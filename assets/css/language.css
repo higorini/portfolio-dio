@@ -10,7 +10,7 @@
 .languages li {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  margin: 1rem 0;
   font-weight: 700;
   font-size: 1rem;
 }
