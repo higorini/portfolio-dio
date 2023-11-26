@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Portfólio Higor M. dos Santos</title>
 
     <!-- Normalize CSS -->
@@ -24,6 +25,8 @@
     <link rel="stylesheet" href="./assets/css/global.css" />
     <!-- Header CSS -->
     <link rel="stylesheet" href="./assets/css/header.css" />
+    <!-- Acordeon CSS -->
+    <link rel="stylesheet" href="./assets/css/acordeon.css" />
   </head>
 
   <body>
@@ -35,7 +38,7 @@
           class="photo"
         />
 
-        <h1 class="title">Olá,<br />eu sou o<br />Higor M. dos Santos</h1>
+        <h1 class="title" id="title"></h1>
 
         <div class="information">
           <p class="job">Front-end Developer</p>
@@ -44,6 +47,21 @@
           <p class="email">higormquinto@gmail.com</p>
         </div>
       </header>
+
+      <section class="acordeon">
+        <button class="trigger" type="button">Idiomas</button>
+
+        <div class="content">
+          <ul>
+            <li>Português</li>
+            <li>Inglês</li>
+            <li>Espanhol</li>
+          </ul>
+        </div>
+      </section>
     </div>
+
+    <script src="./assets/js/typing.js"></script>
+    <script src="./assets/js/acordeon.js"></script>
   </body>
 </html>

@@ -26,9 +26,14 @@
 }
 
 .header .title {
+  width: 330px;
+  height: 115px;
+}
+
+.header .title span {
+  font-size: 1.95rem;
   font-family: "Neue Machina", sans-serif;
   text-align: center;
-  margin: 1.5rem 0;
 }
 
 .information {
@@ -84,7 +89,7 @@
     margin: 0 auto;
   }
 
-  .header .title {
+  .header .title span {
     grid-area: title;
     text-align: start;
   }
