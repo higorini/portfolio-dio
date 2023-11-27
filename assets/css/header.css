@@ -33,7 +33,6 @@
 .header .title span {
   font-size: 1.95rem;
   font-family: "Neue Machina", sans-serif;
-  text-align: center;
 }
 
 .information {
@@ -74,6 +73,26 @@
 
 .information .email::before {
   background-image: url("../icons/email.svg");
+}
+
+@media only screen and (max-width: 375px) {
+  .header .title {
+    margin-left: 2.2rem;
+  }
+
+  .header .title span {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 393px) {
+  .header .title {
+    margin-left: 0;
+  }
+
+  .header .title span {
+    font-size: 1.95rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
