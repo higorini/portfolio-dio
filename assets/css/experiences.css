@@ -1,0 +1,30 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experiences li {
+  margin-bottom: 1rem;
+}
+
+.experiences li .period::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../icons/calendar.svg");
+}
+
+.game-design ul {
+  padding: 0;
+}
+
+.game-design li {
+  list-style: none;
+}

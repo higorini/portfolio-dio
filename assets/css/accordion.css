@@ -27,6 +27,12 @@
   border: none;
 }
 
+.accordion .trigger h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: start;
+}
+
 .accordion .trigger:hover {
   cursor: pointer;
 }
@@ -54,6 +60,16 @@
   transform: rotate(180deg);
 }
 
+.accordion .content .title.desktop {
+  display: none;
+}
+
+.accordion.open .content.skill {
+  height: 160px;
+  opacity: 1;
+  padding: 0 1rem 1rem 2rem;
+}
+
 .accordion.open .content.language {
   height: 160px;
   opacity: 1;
@@ -66,7 +82,35 @@
   padding: 0 1rem 1rem 2rem;
 }
 
+.accordion.open .content.experience {
+  height: 290px;
+  opacity: 1;
+  padding: 0 1rem 1rem 2rem;
+  overflow: auto;
+}
+
+.accordion.open .content.experience.scrollbar::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #55569e;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
 @media only screen and (min-width: 768px) {
+  .accordion .content .title.desktop {
+    display: block;
+  }
+
+  .accordion .content .title.mobile {
+    display: none;
+  }
+
   .accordion.open .content.language {
     height: 70px;
   }

@@ -53,6 +53,20 @@ a:hover {
   transform: rotate(180deg);
 }
 
+/*-- Custom Scrollbar --*/
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
 @media only screen and (min-width: 768px) {
   .main {
     max-width: 1024px;
