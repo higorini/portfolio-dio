@@ -83,7 +83,7 @@
 }
 
 .accordion.open .content.portfolio {
-  height: 320px;
+  height: 100%;
   opacity: 1;
   padding: 0 1rem 1rem 2rem;
 }
@@ -115,9 +115,5 @@
 
   .accordion .content .title.mobile {
     display: none;
-  }
-
-  .accordion.open .content.portfolio {
-    height: 250px;
   }
 }
