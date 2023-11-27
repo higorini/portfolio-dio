@@ -65,13 +65,19 @@
 }
 
 .accordion.open .content.skill {
-  height: 160px;
+  height: 100%;
   opacity: 1;
   padding: 0 1rem 1rem 2rem;
 }
 
 .accordion.open .content.language {
-  height: 160px;
+  height: 100%;
+  opacity: 1;
+  padding: 0 1rem 1rem 2rem;
+}
+
+.accordion.open .content.education {
+  height: 100%;
   opacity: 1;
   padding: 0 1rem 1rem 2rem;
 }
@@ -109,10 +115,6 @@
 
   .accordion .content .title.mobile {
     display: none;
-  }
-
-  .accordion.open .content.language {
-    height: 70px;
   }
 
   .accordion.open .content.portfolio {
