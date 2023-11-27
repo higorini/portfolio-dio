@@ -20,6 +20,15 @@ body {
   border-radius: 1rem;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .main::before,
 .main::after {
   content: "";

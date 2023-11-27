@@ -24,15 +24,6 @@
   margin-bottom: 0.5rem;
 }
 
-.portfolios li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.portfolios li a:hover {
-  text-decoration: underline;
-}
-
 .portfolios li .title::before {
   content: "";
   display: inline-block;
